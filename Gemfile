@@ -169,7 +169,7 @@ gem 'kaminari', '~> 1.2.2' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'hamlit', '~> 2.15.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Files attachments
-gem 'carrierwave', '~> 1.3' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'carrierwave', '~> 2.2' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'mini_magick', '~> 4.12' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # for backups
@@ -257,7 +257,7 @@ gem 'rack', '~> 2.2.9' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'rack-timeout', '~> 0.7.0', require: 'rack/timeout/base' # rubocop:todo Gemfile/MissingFeatureCategory
 
 group :puma do
-  gem 'puma', '= 6.4.0', require: false, feature_category: :shared
+  gem 'puma', '6.4.2', require: false, feature_category: :shared
   gem 'sd_notify', '~> 0.1.0', require: false # rubocop:todo Gemfile/MissingFeatureCategory
 end
 
