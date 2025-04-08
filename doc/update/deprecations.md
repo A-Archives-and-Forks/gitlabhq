@@ -741,7 +741,7 @@ In GitLab 18.6, we'll remove the `user_profile_visiblity_updated` event type.
 
 <div class="deprecation breaking-change" data-milestone="18.6">
 
-### Remove compliance standards adherence dashboard
+### Replace compliance standards adherence dashboard with compliance status dashboard
 
 <div class="deprecation-notes">
 
@@ -759,7 +759,7 @@ In GitLab 17.11, we released:
 These features give all of the same functionality as the compliance standards adherence dashboard, but you can
 configure the adherence that you require.
 
-In GitLab 18.6, we'll remove the compliance standards adherence dashboard.
+In GitLab 18.6, we'll replace the compliance standards adherence dashboard with the compliance status dashboard for more accurate reporting on requirements and controls.
 
 </div>
 </div>
@@ -956,7 +956,7 @@ This migration tool will be removed in GitLab 18.3.
 
 - Announced in GitLab <span class="milestone">15.9</span>
 - Removal in GitLab <span class="milestone">18.0</span> ([breaking change](https://docs.gitlab.com/update/terminology/#breaking-change))
-- To discuss this change or learn more, see the [deprecation issue](https://gitlab.com/gitlab-org/gitlab/-/issues/395708).
+- To discuss this change or learn more, see the [deprecation issue](https://gitlab.com/gitlab-org/gitlab/-/issues/383084).
 
 </div>
 
@@ -966,7 +966,7 @@ This setting was called **Limit CI_JOB_TOKEN access**. In GitLab 16.3, we rename
 In GitLab 15.9, we introduced an alternative setting called
 [**Authorized groups and projects**](https://docs.gitlab.com/ci/jobs/ci_job_token/#add-a-group-or-project-to-the-job-token-allowlist).
 This setting controls job token access _to_ your project by using an allowlist.
-This new setting is a large improvement over the original. The first iteration is deprecated
+This new setting is a large improvement over the original. The first iteration was deprecated
 in GitLab 16.0 and scheduled for removal in GitLab 18.0.
 
 The **Limit access _from_ this project** setting is disabled by default for all new projects.
