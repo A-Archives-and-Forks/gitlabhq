@@ -27092,6 +27092,7 @@ Represents a vulnerability. The connection type is countable.
 | <a id="countablevulnerabilityidentifiers"></a>`identifiers` | [`[VulnerabilityIdentifier!]!`](#vulnerabilityidentifier) | Identifiers of the vulnerability. |
 | <a id="countablevulnerabilityinitialdetectedpipeline"></a>`initialDetectedPipeline` {{< icon name="warning-solid" >}} | [`Pipeline`](#pipeline) | **Introduced** in GitLab 18.2. **Status**: Experiment. Pipeline where the vulnerability was first detected. |
 | <a id="countablevulnerabilitylatestdetectedpipeline"></a>`latestDetectedPipeline` {{< icon name="warning-solid" >}} | [`Pipeline`](#pipeline) | **Introduced** in GitLab 18.2. **Status**: Experiment. Pipeline where the vulnerability was last detected. |
+| <a id="countablevulnerabilitylatestsecurityreportfinding"></a>`latestSecurityReportFinding` {{< icon name="warning-solid" >}} | [`PipelineSecurityReportFinding`](#pipelinesecurityreportfinding) | **Introduced** in GitLab 18.4. **Status**: Experiment. Latest security report finding for the vulnerability. |
 | <a id="countablevulnerabilitylinks"></a>`links` | [`[VulnerabilityLink!]!`](#vulnerabilitylink) | List of links associated with the vulnerability. |
 | <a id="countablevulnerabilitylocation"></a>`location` | [`VulnerabilityLocation`](#vulnerabilitylocation) | Location metadata for the vulnerability. Its fields depend on the type of security scan that found the vulnerability. |
 | <a id="countablevulnerabilitymergerequest"></a>`mergeRequest` | [`MergeRequest`](#mergerequest) | Merge request that fixes the vulnerability. |
@@ -38244,6 +38245,7 @@ Represents vulnerability finding of a security report on the pipeline.
 | <a id="pipelinesecurityreportfindinglinks"></a>`links` | [`[VulnerabilityLink!]`](#vulnerabilitylink) | List of links associated with the vulnerability. |
 | <a id="pipelinesecurityreportfindinglocation"></a>`location` | [`VulnerabilityLocation`](#vulnerabilitylocation) | Location metadata for the vulnerability. Its fields depend on the type of security scan that found the vulnerability. |
 | <a id="pipelinesecurityreportfindingmergerequest"></a>`mergeRequest` | [`MergeRequest`](#mergerequest) | Merge request that fixes the vulnerability. |
+| <a id="pipelinesecurityreportfindingoriginalseverity"></a>`originalSeverity` | [`VulnerabilitySeverity`](#vulnerabilityseverity) | Severity of the vulnerability finding before any overrides. |
 | <a id="pipelinesecurityreportfindingproject"></a>`project` | [`Project`](#project) | Project on which the vulnerability finding was found. |
 | <a id="pipelinesecurityreportfindingremediations"></a>`remediations` | [`[VulnerabilityRemediationType!]`](#vulnerabilityremediationtype) | Remediations of the security report finding. |
 | <a id="pipelinesecurityreportfindingreporttype"></a>`reportType` | [`VulnerabilityReportType`](#vulnerabilityreporttype) | Type of the security report that found the vulnerability finding. |
@@ -38447,8 +38449,11 @@ Represents generic policy violation information.
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
+| <a id="policyviolationinfodismissed"></a>`dismissed` | [`Boolean!`](#boolean) | Represents if a warn mode policy violation was dismissed. |
+| <a id="policyviolationinfoenforcementtype"></a>`enforcementType` | [`PolicyEnforcementType!`](#policyenforcementtype) | Represents the enforcement type of the violated policy. |
 | <a id="policyviolationinfoname"></a>`name` | [`String!`](#string) | Represents the name of the violated policy. |
 | <a id="policyviolationinforeporttype"></a>`reportType` | [`ApprovalReportType!`](#approvalreporttype) | Represents the report type. |
+| <a id="policyviolationinfosecuritypolicyid"></a>`securityPolicyId` | [`ID`](#id) | Represents the violated security policy id. |
 | <a id="policyviolationinfostatus"></a>`status` | [`PolicyViolationStatus`](#policyviolationstatus) | Represents the status of the violated policy. |
 
 ### `PreviewBillableUserChange`
@@ -44629,6 +44634,7 @@ Represents a vulnerability.
 | <a id="vulnerabilityidentifiers"></a>`identifiers` | [`[VulnerabilityIdentifier!]!`](#vulnerabilityidentifier) | Identifiers of the vulnerability. |
 | <a id="vulnerabilityinitialdetectedpipeline"></a>`initialDetectedPipeline` {{< icon name="warning-solid" >}} | [`Pipeline`](#pipeline) | **Introduced** in GitLab 18.2. **Status**: Experiment. Pipeline where the vulnerability was first detected. |
 | <a id="vulnerabilitylatestdetectedpipeline"></a>`latestDetectedPipeline` {{< icon name="warning-solid" >}} | [`Pipeline`](#pipeline) | **Introduced** in GitLab 18.2. **Status**: Experiment. Pipeline where the vulnerability was last detected. |
+| <a id="vulnerabilitylatestsecurityreportfinding"></a>`latestSecurityReportFinding` {{< icon name="warning-solid" >}} | [`PipelineSecurityReportFinding`](#pipelinesecurityreportfinding) | **Introduced** in GitLab 18.4. **Status**: Experiment. Latest security report finding for the vulnerability. |
 | <a id="vulnerabilitylinks"></a>`links` | [`[VulnerabilityLink!]!`](#vulnerabilitylink) | List of links associated with the vulnerability. |
 | <a id="vulnerabilitylocation"></a>`location` | [`VulnerabilityLocation`](#vulnerabilitylocation) | Location metadata for the vulnerability. Its fields depend on the type of security scan that found the vulnerability. |
 | <a id="vulnerabilitymergerequest"></a>`mergeRequest` | [`MergeRequest`](#mergerequest) | Merge request that fixes the vulnerability. |
@@ -49474,6 +49480,13 @@ Pipeline variables minimum override roles.
 | <a id="pipelinevariablesdefaultroletypemaintainer"></a>`MAINTAINER` | Maintainer. |
 | <a id="pipelinevariablesdefaultroletypeno_one_allowed"></a>`NO_ONE_ALLOWED` | No one allowed. |
 | <a id="pipelinevariablesdefaultroletypeowner"></a>`OWNER` | Owner. |
+
+### `PolicyEnforcementType`
+
+| Value | Description |
+| ----- | ----------- |
+| <a id="policyenforcementtypeenforce"></a>`ENFORCE` | Represents an enforced policy type. |
+| <a id="policyenforcementtypewarn"></a>`WARN` | Represents a warn mode policy type. |
 
 ### `PolicyProjectCreatedStatus`
 

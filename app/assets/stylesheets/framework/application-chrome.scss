@@ -275,7 +275,7 @@
     }
   }
 
-  .ai-panel-body{
+  .ai-panel-body {
     max-height: calc(100vh - #{$header-height} - #{$gl-spacing-scale-3} - #{$top-bar-height} - #{$gl-spacing-scale-8});
   }
 
@@ -483,6 +483,18 @@
     &:not(.wiki-sidebar):not(.build-sidebar) .panel-content-inner {
       @container content-panels (width >= #{map.get($breakpoints, 'sm')}) {
         padding-right: $right-sidebar-width;
+      }
+    }
+  }
+
+  // MR changes tab
+  .container-fluid:not(.container-limited),
+  .container-fluid.rd-page-container {
+    .detail-page-header,
+    .detail-page-description,
+    .merge-request-tabs-container {
+      &.is-merge-request {
+        max-width: $fixed-layout-width - ($gl-padding-12 * 2) !important;
       }
     }
   }

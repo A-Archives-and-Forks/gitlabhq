@@ -37155,9 +37155,6 @@ msgstr ""
 msgid "Jobs|Create CI/CD configuration file"
 msgstr ""
 
-msgid "Jobs|Filter jobs"
-msgstr ""
-
 msgid "Jobs|Finished"
 msgstr ""
 
@@ -57269,9 +57266,6 @@ msgstr ""
 msgid "Search for this text"
 msgstr ""
 
-msgid "Search for this text (experiment)"
-msgstr ""
-
 msgid "Search forks"
 msgstr ""
 
@@ -70990,6 +70984,9 @@ msgid "Value Streams Dashboard | DORA"
 msgstr ""
 
 msgid "Value field is required."
+msgstr ""
+
+msgid "Value rendered as plain text."
 msgstr ""
 
 msgid "Value stream"
