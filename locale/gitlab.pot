@@ -29879,7 +29879,7 @@ msgstr ""
 msgid "Find file"
 msgstr ""
 
-msgid "Find the activation code for a purchased or renewed subscription in the Customers Portal or purchase confirmation email."
+msgid "Find the activation code for a purchased or renewed subscription in the %{linkStart}Customers Portal%{linkEnd} or purchase confirmation email."
 msgstr ""
 
 msgid "FindFile|Switch branch/tag"
@@ -63378,7 +63378,7 @@ msgstr ""
 msgid "SecurityReports|Starting 2025-05-15, we will gradually migrate vulnerabilities that have not been updated in the last 12 months to the vulnerability archive. Archived vulnerabilities are stored for 3 years before deletion. To access the archive, on the left sidebar, select Secure &gt; Security Configuration &gt; Vulnerability Management."
 msgstr ""
 
-msgid "SecurityReports|Starting in GitLab 18.8, the Vulnerabilities over time chart excludes no longer detected vulnerabilities, which might result in a drop in the total number of vulnerabilities shown in the chart. %{linkStart}Learn more%{linkEnd}"
+msgid "SecurityReports|Starting in GitLab 18.8 (available January 2026) on GitLab.com and in GitLab 18.9 (available February 2026) on GitLab Self-Managed and GitLab Dedicated, the Vulnerabilities over time chart excludes no longer detected vulnerabilities. This change might result in a drop in the total number of vulnerabilities shown in the chart. %{linkStart}Learn more%{linkEnd}"
 msgstr ""
 
 msgid "SecurityReports|Status"
@@ -67172,6 +67172,9 @@ msgid "SuperSonics|Online license"
 msgstr ""
 
 msgid "SuperSonics|Ready to get started? A GitLab plan is ideal for scaling organizations and for multi team usage."
+msgstr ""
+
+msgid "SuperSonics|Received a license key? %{linkStart}Go to license settings%{linkEnd} to add it to your GitLab instance."
 msgstr ""
 
 msgid "SuperSonics|Select that you agree before activating the subscription."
@@ -72406,6 +72409,12 @@ msgstr ""
 msgid "UpdateProject|New visibility level not allowed!"
 msgstr ""
 
+msgid "UpdateProject|Pages access level cannot be public when public access is disabled"
+msgstr ""
+
+msgid "UpdateProject|Pages access level is not allowed for the project visibility level"
+msgstr ""
+
 msgid "UpdateProject|Project could not be updated!"
 msgstr ""
 
@@ -74643,6 +74652,12 @@ msgstr ""
 msgid "VirtualRegistries|Configure Virtual Registries settings."
 msgstr ""
 
+msgid "VirtualRegistries|Container registries"
+msgstr ""
+
+msgid "VirtualRegistries|Container upstreams"
+msgstr ""
+
 msgid "VirtualRegistries|Virtual Registries"
 msgstr ""
 
@@ -74820,6 +74835,9 @@ msgid "VirtualRegistry|Connect Maven virtual registry to an upstream"
 msgstr ""
 
 msgid "VirtualRegistry|Connection successful."
+msgstr ""
+
+msgid "VirtualRegistry|Container virtual registries"
 msgstr ""
 
 msgid "VirtualRegistry|Copy virtual registry ID: %{id}"
